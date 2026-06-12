@@ -331,15 +331,15 @@ export const projects = [
         <path d="M17 7H21V11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    logoColor: "#22C55E",
-    accent: "#22C55E",
+    logoColor: "#111111",
+    accent: "#111111",
     tagline: "Track stocks, manage your portfolio, and discover new investments.",
-    palette: ["#111111", "#22C55E", "#EF4444", "#F4F4F4", "#FFFFFF"],
+    palette: ["#111111", "#FFFFFF", "#8A8A8A", "#F5F5F5", "#E8E8E8"],
     description: "A Swift iOS stock trading concept for tracking watchlists, searching stocks, viewing portfolio performance, and managing investments.",
     mainText: "Vest is a stock trading concept designed for clear portfolio tracking and quick market discovery. The app gives users a watchlist for following stocks, a search screen to find new tickers, detailed stock pages with charts and stats, and a portfolio view that shows balance, holdings, and performance at a glance.",
     ideaText: "The idea was to create a trading interface that stays clean and readable even when financial data gets detailed. Most trading apps crowd the screen with numbers, labels, and tiny buttons. Vest keeps the layout simple: cards for stock summaries, clear green and red indicators for movement, bottom sheets for detail, and a dashboard that always shows the most important number first.",
     experienceText: "The user starts on a dashboard with their portfolio balance, key holdings, and quick access to their watchlist. They can search for stocks by name or ticker, view a detailed stock page with chart, stats, and news, add stocks to their watchlist, and check their full portfolio performance over different time periods.",
-    designText: "The design uses a clean financial palette: dark surfaces for the main dashboard, green for gains and positive indicators, red for losses and negative movement, light grey for cards and dividers, and white for text and important data. The colors follow market conventions so the user can read performance immediately.",
+    designText: "The design uses a clean monochrome palette: dark surfaces for the main dashboard, white cards and panels, grey labels and secondary text, smoke white backgrounds for subtle contrast, and soft grey dividers. The interface stays minimal and neutral so stock data, price movements, and charts remain the primary focus without distracting colors.",
     buildText: "This concept was planned for Swift and SwiftUI using portfolio cards, watchlist rows, search with autocomplete, stock detail sheets, interactive chart components, holding summaries, and time period selectors. The design took around 3\u20134 days.",
     flowText: "The flow is designed for quick decisions: check your dashboard, browse your watchlist, search for new stocks, and review detailed performance.",
     problem: "Stock trading apps can feel overwhelming when financial data, charts, watchlists, and portfolio details compete for space on a small screen.",
@@ -360,7 +360,7 @@ export const projects = [
     ],
     uiSystem: [
       ["Cards", "Stock summary cards with price and change"],
-      ["Color", "Green for gains, red for losses, dark surfaces"],
+      ["Color", "Monochrome palette with dark surfaces and white cards"],
       ["Charts", "Interactive line and candlestick views"],
       ["Navigation", "Simple tab bar for key sections"],
     ],
@@ -369,8 +369,8 @@ export const projects = [
     feeling: "Clean, confident, professional, focused, modern, and readable.",
     nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
     images: [
-      "https://i.ibb.co/Jj4mByn7/0-02-05-e8f5d26ea0c9937ff32ec72fa863f6b6157346397129ac4f40dfec9015a4357f-226d0d169e7-portrait.png",
       "https://i.ibb.co/G3JMN1Kr/IMG-1017-portrait.png",
+      "https://i.ibb.co/Jj4mByn7/0-02-05-e8f5d26ea0c9937ff32ec72fa863f6b6157346397129ac4f40dfec9015a4357f-226d0d169e7-portrait.png",
       "https://i.ibb.co/MykFqbSg/IMG-1019-portrait.png",
       "https://i.ibb.co/B5fjys2W/IMG-1020-portrait.png",
     ],

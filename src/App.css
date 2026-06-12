@@ -308,7 +308,6 @@ header {
 
 .project-page {
   min-height: 100vh;
-  overflow-y: auto;
 }
 
 .back-btn {
