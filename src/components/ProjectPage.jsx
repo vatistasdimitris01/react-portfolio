@@ -1,8 +1,21 @@
 import { useState, useEffect, useCallback } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "../data/projects.jsx";
 
-export default function ProjectPage({ projectIndex, onGoHome, onOpenProject }) {
+export default function ProjectPage() {
+  const { slug } = useParams();
+  const navigate = useNavigate();
+  const slugMap = {};
+  projects.forEach((p, i) => { slugMap[p.title.toLowerCase()] = i; });
+  const projectIndex = slugMap[slug];
   const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    if (projectIndex === undefined) navigate("/", { replace: true });
+  }, [projectIndex, navigate]);
+
+  if (projectIndex === undefined) return null;
+
   const project = projects[projectIndex];
   const nextIndex = (projectIndex + 1) % projects.length;
   const nextProject = projects[nextIndex];
@@ -19,21 +32,22 @@ export default function ProjectPage({ projectIndex, onGoHome, onOpenProject }) {
 
   useEffect(() => {
     setActiveSlide(0);
-  }, [projectIndex]);
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   useEffect(() => {
     function handleKey(e) {
-      if (e.key === "Escape") onGoHome();
+      if (e.key === "Escape") navigate("/");
       if (e.key === "ArrowRight") nextSlide();
       if (e.key === "ArrowLeft") prevSlide();
     }
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
-  }, [onGoHome, nextSlide, prevSlide]);
+  }, [navigate, nextSlide, prevSlide]);
 
   return (
     <div className="project-page">
-      <button className="back-btn" onClick={onGoHome} aria-label="Back to homepage">
+      <button className="back-btn" onClick={() => navigate("/")} aria-label="Back to homepage">
         <svg className="icon" viewBox="0 0 24 24" fill="none">
           <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
@@ -189,7 +203,7 @@ export default function ProjectPage({ projectIndex, onGoHome, onOpenProject }) {
           </div>
         </div>
 
-        <div className="next-project-card" onClick={() => onOpenProject(nextIndex)}>
+        <div className="next-project-card" onClick={() => navigate(`/${nextProject.title.toLowerCase()}`)}>
           <div>
             <div className="concept-label">Next app to look at</div>
             <h3>{nextProject.title}</h3>
