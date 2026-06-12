@@ -1,0 +1,17 @@
+# Dimitris Vatistas — Full Stack Developer & UI Designer
+# Website: https://dvatistas.vercel.app/
+
+## About
+Full Stack Web Developer, Swift iOS App Developer, Android App Developer, and UI Designer creating modern websites, mobile apps, interactive prototypes, and clean digital products.
+
+## Portfolio Apps
+- Stays: A calm way to discover and book beautiful stays. (https://dvatistas.vercel.app/stays)
+- Scoffly: Food, groceries, and restaurants in one friendly app. (https://dvatistas.vercel.app/scoffly)
+- FitZone: Activity, sleep, and workouts in a clean daily dashboard. (https://dvatistas.vercel.app/fitzone)
+- Route: Plan, price, and track rides with a clear map flow. (https://dvatistas.vercel.app/route)
+- Mono: Organize your closet and discover outfits with AI. (https://dvatistas.vercel.app/mono)
+- STRM: Discover movies and TV shows with a clean streaming experience. (https://dvatistas.vercel.app/strm)
+- Vest: Track stocks, manage your portfolio, and discover new investments. (https://dvatistas.vercel.app/vest)
+
+## Contact
+Email: vatistasdimitris.01@gmail.com

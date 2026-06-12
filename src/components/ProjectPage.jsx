@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { projects } from "../data/projects.jsx";
+import { siteUrl } from "../data/metadata.js";
 
 export default function ProjectPage() {
   const { slug } = useParams();
@@ -19,6 +21,21 @@ export default function ProjectPage() {
   const project = projects[projectIndex];
   const nextIndex = (projectIndex + 1) % projects.length;
   const nextProject = projects[nextIndex];
+
+  const pageTitle = `${project.title} — ${project.tagline}`;
+  const ogTitle = `${project.title} App Concept by Dimitris Vatistas`;
+  const projectUrl = `${siteUrl}/${slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: project.title,
+    applicationCategory: "MobileApplication",
+    operatingSystem: "iOS",
+    description: project.description,
+    url: projectUrl,
+    author: { "@type": "Person", name: "Dimitris Vatistas" },
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
 
   const slideCount = project.images.length;
 
@@ -47,6 +64,24 @@ export default function ProjectPage() {
 
   return (
     <div className="project-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={project.description} />
+        <meta property="og:title" content={ogTitle} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:url" content={projectUrl} />
+        <meta property="og:image" content={project.images[0]} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={ogTitle} />
+        <meta name="twitter:description" content={project.description} />
+        <meta name="twitter:image" content={project.images[0]} />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
       <button className="back-btn" onClick={() => navigate("/")} aria-label="Back to homepage">
         <svg className="icon" viewBox="0 0 24 24" fill="none">
           <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

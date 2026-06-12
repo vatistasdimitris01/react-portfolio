@@ -1,7 +1,9 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { socials } from "../data/socials.jsx";
 import { projects } from "../data/projects.jsx";
+import { homepageMeta, siteUrl } from "../data/metadata.js";
 
 function scrollTo(id) {
   const el = document.getElementById(id);
@@ -48,6 +50,24 @@ export default function HomePage() {
 
   return (
     <div id="homePage">
+      <Helmet>
+        <title>{homepageMeta.title}</title>
+        <meta name="description" content={homepageMeta.description} />
+        <meta property="og:title" content={homepageMeta.ogTitle} />
+        <meta property="og:description" content={homepageMeta.ogDescription} />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:image" content={homepageMeta.ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content={homepageMeta.twitterCard} />
+        <meta name="twitter:title" content={homepageMeta.ogTitle} />
+        <meta name="twitter:description" content={homepageMeta.ogDescription} />
+        <meta name="twitter:image" content={homepageMeta.ogImage} />
+        <script type="application/ld+json">
+          {JSON.stringify(homepageMeta.jsonLd)}
+        </script>
+      </Helmet>
       <button
         className={`menu-btn${menuOpen ? " open" : ""}`}
         onClick={() => setMenuOpen((v) => !v)}
