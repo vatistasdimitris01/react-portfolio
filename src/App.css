@@ -96,18 +96,90 @@ header {
   border-bottom: 1px solid #f0f0f0;
 }
 
-nav {
+.desktop-nav {
   text-align: right;
   margin-bottom: 90px;
 }
 
-nav a {
+.menu-btn {
+  display: none;
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  background: #ffffff;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: background 0.25s ease;
+}
+
+.menu-btn span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #222;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn.open span:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.menu-btn.open span:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-overlay.open {
+  display: flex;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+}
+
+.menu-nav a {
+  font-size: 32px;
+  color: #222;
+  margin: 0;
+  transition: opacity 0.25s ease;
+}
+
+.menu-nav a:hover {
+  opacity: 0.5;
+}
+
+.desktop-nav a {
   margin-left: 32px;
   color: #111;
   font-size: 12px;
 }
 
-nav a:first-child {
+.desktop-nav a:first-child {
   color: #111;
   font-style: normal;
 }
@@ -767,6 +839,14 @@ footer {
     padding: 28px;
   }
 
+  .menu-btn {
+    display: flex;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
   header {
     min-height: auto;
     gap: 34px;
@@ -805,16 +885,6 @@ footer {
   .social-icon {
     width: 20px;
     height: 20px;
-  }
-
-  nav {
-    text-align: left;
-    margin-bottom: 40px;
-  }
-
-  nav a {
-    margin-left: 0;
-    margin-right: 20px;
   }
 
   .project-box {
@@ -880,17 +950,6 @@ footer {
 
   .name {
     margin-bottom: 32px;
-  }
-
-  nav {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-  }
-
-  nav a {
-    margin: 0;
   }
 
   .social-icon {

@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { socials } from "../data/socials.jsx";
 import { projects } from "../data/projects.jsx";
 
 export default function HomePage({ onOpenProject }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const intervalRef = useRef(null);
 
   useEffect(() => {
@@ -10,6 +11,15 @@ export default function HomePage({ onOpenProject }) {
     intervalRef.current = setInterval(cycleMobileCards, 1200);
     return () => clearInterval(intervalRef.current);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
+  function closeMenu() {
+    setMenuOpen(false);
+  }
 
   function isMobileView() {
     return window.matchMedia("(max-width: 900px)").matches;
@@ -28,6 +38,22 @@ export default function HomePage({ onOpenProject }) {
 
   return (
     <div id="homePage">
+      <button
+        className={`menu-btn${menuOpen ? " open" : ""}`}
+        onClick={() => setMenuOpen((v) => !v)}
+        aria-label="Toggle menu"
+      >
+        <span /><span />
+      </button>
+
+      <div className={`menu-overlay${menuOpen ? " open" : ""}`}>
+        <nav className="menu-nav">
+          <a href="#work" onClick={closeMenu}>Work</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
+          <a href="#social" onClick={closeMenu}>Social</a>
+        </nav>
+      </div>
+
       <header>
         <section>
           <div className="name">Dimitris Vatistas</div>
@@ -42,7 +68,7 @@ export default function HomePage({ onOpenProject }) {
         </section>
 
         <section>
-          <nav>
+          <nav className="desktop-nav">
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
             <a href="#social">Social</a>
