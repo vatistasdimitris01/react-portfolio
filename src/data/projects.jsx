@@ -375,4 +375,56 @@ export const projects = [
       "https://i.ibb.co/B5fjys2W/IMG-1020-portrait.png",
     ],
   },
+  {
+    title: "Skyward",
+    brandName: "Skyward",
+    logo: (
+      <svg className="app-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 12L9 10L12 3L15 10L21 12L15 14L12 21L9 14L3 12Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+      </svg>
+    ),
+    logoColor: "#FEF9C3",
+    accent: "#FEF9C3",
+    tagline: "Find flights, compare fares, and travel with confidence.",
+    palette: ["#111111", "#FFFFFF", "#F4F4F4", "#FEF9C3", "#D4EDDA"],
+    description: "A Swift iOS flight booking concept for searching destinations, comparing fares, selecting seats, and tracking reservations.",
+    mainText: "Skyward is a flight booking concept designed around clarity, trust, and smooth trip planning. The app focuses on helping users search flights, compare fare options, pick seats, and track their reservations without friction. The interface stays clean and readable even when presenting complex fare and schedule information.",
+    ideaText: "The main idea was to make flight booking feel calm and transparent instead of stressful. Most travel booking flows feel rushed and crowded because they show too many options, rules, alerts, and upsells on one screen. Skyward separates each decision point — search, fare comparison, seat selection, and trip details — so the user never feels overwhelmed.",
+    experienceText: "The user begins on a search screen with destination fields, date inputs, and passenger count. After searching, they see a fare comparison list showing airlines, prices, durations, and stops. Selecting a fare opens the booking flow where they choose seats and review the full trip before confirming. A dedicated trips screen shows upcoming and past reservations with status and details.",
+    designText: "The design uses a clean monochrome base: dark surfaces for the main app chrome, white for content areas, soft smoke gray for dividers and cards, light yellow accents for highlights, branding, and call-to-action buttons, and light green for positive indicators like available seats and confirmed statuses. The layout is spacious with clear typography hierarchy and rounded cards.",
+    buildText: "This concept was planned for Swift and SwiftUI using destination search forms, fare comparison cards, date picker components, seat maps, booking summary panels, and trip status cards. The design took around 3\u20134 days.",
+    flowText: "The flow is simple: search for flights, compare fare options, choose seats and extras, confirm booking, then track your trip.",
+    problem: "Flight booking apps can be stressful when search results, fare rules, upsells, and booking steps are all crowded into a single screen.",
+    solution: "The solution is a separated step-by-step booking flow that lets users focus on one decision at a time with clear information at each stage.",
+    audience: "Travelers who want to search flights, compare prices, select seats, and manage their bookings in a simple and calm mobile interface.",
+    features: ["Flight search", "Fare comparison", "Seat selection", "Booking summary", "Trip tracking", "Past reservations"],
+    flowSteps: [
+      ["Search", "Enter destination, dates, and passengers."],
+      ["Compare", "Review fares, airlines, and durations."],
+      ["Book", "Select seats and confirm the trip."],
+      ["Track", "View upcoming and past reservations."],
+    ],
+    architecture: [
+      ["Search", "Destinations, dates, passengers"],
+      ["Results", "Fare list, airlines, stops, prices"],
+      ["Booking", "Seat map, extras, payment summary"],
+      ["Trips", "Upcoming trips, history, status"],
+    ],
+    uiSystem: [
+      ["Search Form", "Clear input fields with date pickers"],
+      ["Cards", "Rounded fare comparison and trip cards"],
+      ["Accent", "Light yellow for CTAs and highlights"],
+      ["Status", "Light green for available and confirmed"],
+    ],
+    screens: "Flight search, fare comparison, booking and seat selection, trip tracking.",
+    designFocus: "Clear search inputs, fare comparison cards, simple seat selection, and readable trip status.",
+    feeling: "Calm, clean, trustworthy, modern, spacious, and easy to use.",
+    nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
+    images: [
+      "https://i.ibb.co/mCtwCVmC/IMG-1050.png",
+      "https://i.ibb.co/39JjnmqJ/IMG-1051.png",
+      "https://i.ibb.co/1GgdpgfX/IMG-1052.png",
+      "https://i.ibb.co/zV7ZQpSs/IMG-1053.png",
+    ],
+  },
 ];

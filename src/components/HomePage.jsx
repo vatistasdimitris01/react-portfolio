@@ -135,6 +135,8 @@ export default function HomePage() {
                 ? "Wardrobe catalog, item upload, and AI outfit suggestions."
                 : project.title === "Vest"
                 ? "Dashboard portfolio, watchlist, search, and stock detail."
+                : project.title === "Skyward"
+                ? "Flight search, fare comparison, seat selection, and trip tracking."
                 : project.images.length === 3
                 ? "Home, restaurant detail, and item customization."
                 : project.title === "Stays"

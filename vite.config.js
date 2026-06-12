@@ -9,7 +9,7 @@ export default defineConfig({
     vitePrerenderPlugin({
       renderTarget: "#root",
       prerenderScript: path.resolve("src/prerender.jsx"),
-      additionalPrerenderRoutes: ["/stays", "/scoffly", "/fitzone", "/route", "/mono", "/strm", "/vest"],
+      additionalPrerenderRoutes: ["/stays", "/scoffly", "/fitzone", "/route", "/mono", "/strm", "/vest", "/skyward"],
       previewMiddlewareFallback: "/index.html",
     }),
   ],
