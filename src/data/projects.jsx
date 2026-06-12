@@ -317,9 +317,6 @@ export const projects = [
     feeling: "Cinematic, immersive, modern, dark, clean, and focused.",
     nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
     images: [
-      "https://i.ibb.co/0Vy8gy8V/IMG-1005-portrait.png",
-      "https://i.ibb.co/gZy7pj2G/IMG-1006-portrait.png",
-      "https://i.ibb.co/4nQPXmYc/IMG-1007-portrait.png",
       "https://i.ibb.co/xK0PszX9/IMG-1013-portrait.png",
       "https://i.ibb.co/Z6WyvX16/IMG-1015-portrait.png",
       "https://i.ibb.co/73MnCp8/IMG-1016-portrait.png",
