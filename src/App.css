@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -72,6 +77,7 @@ header {
   max-width: 650px;
   margin-bottom: 55px;
   font-weight: 400;
+  animation: fadeSlideUp 0.6s ease both;
 }
 
 .info-block {
@@ -98,6 +104,7 @@ header {
 .desktop-nav {
   text-align: right;
   margin-bottom: 48px;
+  animation: fadeSlideUp 0.6s ease 0.12s both;
 }
 
 .menu-btn {
@@ -190,6 +197,7 @@ header {
   letter-spacing: -1.8px;
   color: #222;
   margin-bottom: 32px;
+  animation: fadeSlideUp 0.6s ease 0.24s both;
 }
 
 .about-title {
@@ -218,6 +226,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 34px 22px;
   margin-bottom: 80px;
+  animation: fadeSlideUp 0.7s ease 0.4s both;
 }
 
 .project {
@@ -332,6 +341,7 @@ header {
   margin: 0 auto;
   padding: 74px 0 90px;
   text-align: center;
+  animation: fadeSlideUp 0.6s ease both;
 }
 
 .project-title-block {
@@ -728,6 +738,7 @@ header {
   margin: 0 auto;
   padding: 80px 0 100px;
   border-top: 1px solid #f0f0f0;
+  animation: fadeSlideUp 0.7s ease 0.55s both;
 }
 
 .contact-section-inner {
