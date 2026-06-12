@@ -209,12 +209,65 @@ export const projects = [
     screens: "Map home, plan trip, fare estimate, active trip.",
     designFocus: "Map clarity, bottom-sheet UI, fast destination input, price confidence, and active ride tracking.",
     feeling: "Minimal, direct, functional, trustworthy, modern, and fast.",
-    nextText: "Next, go back to Stays to see the warmer booking flow and stay details.",
+    nextText: "Next, view Mono for an AI wardrobe experience with a clean monochrome look.",
     images: [
       "https://i.ibb.co/gnD9hBV/01-map-home-mockup.png",
       "https://i.ibb.co/RTtRxqjT/02-plan-trip-mockup.png",
       "https://i.ibb.co/CNcPm5m/03-fare-estimate-mockup.png",
       "https://i.ibb.co/0jMprp8S/04-active-trip-mockup.png",
+    ],
+  },
+  {
+    title: "Mono",
+    brandName: "Mono",
+    logo: (
+      <svg className="app-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M6 8L12 4L18 8V16L12 20L6 16V8Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M6 8L12 12L18 8" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M12 12V20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+    logoColor: "#111111",
+    accent: "#111111",
+    tagline: "Organize your closet and discover outfits with AI.",
+    palette: ["#111111", "#FFFFFF", "#8A8A8A", "#E8E8E8", "#F4F4F4"],
+    description: "A Swift iOS AI styling concept for cataloging clothes, receiving outfit recommendations, and building a personal wardrobe.",
+    mainText: "Mono is an AI wardrobe concept built around organizing, exploring, and styling your personal clothing collection. The app helps users catalog their items, browse by category or color, receive AI-generated outfit recommendations, and save their favorite looks. The interface is intentionally minimal so the clothing and suggestions stay at the center of the experience.",
+    ideaText: "The main idea was to make personal styling feel simple and intentional instead of overwhelming. Most fashion apps focus on shopping or social content. Mono is different because it focuses on what the user already owns, uses AI to generate fresh combinations, and helps them rediscover their closet in new ways.",
+    experienceText: "The user starts on a wardrobe screen where they can view items sorted by type or color. They can add new pieces by taking a photo or selecting from their gallery. The AI recommendation screen suggests full outfits based on selected items, the weather, or seasonal trends. Each suggestion can be saved into collections for easy planning.",
+    designText: "The design language is built around a grayscale palette: black headlines, white surfaces, medium gray accents, light gray cards, and soft off-white backgrounds. The focus stays on the clothing photography, with clean typography, simple chips, and clear action buttons that feel calm and deliberate.",
+    buildText: "This concept was planned for Swift and SwiftUI using a wardrobe grid system, item cards, camera integration, color and category filters, AI recommendation cards, outfit collection displays, and smooth transitions between upload and discovery. The design took around 3 days.",
+    flowText: "The flow is built around your wardrobe: catalog items, organize by color and type, receive AI outfit suggestions, and save your favorite looks.",
+    problem: "Closet management apps often feel like inventory tools instead of styling companions, making outfit discovery difficult.",
+    solution: "The solution is an AI-driven wardrobe that focuses on outfit creation, not just item tracking, using minimal design and smart suggestions.",
+    audience: "Users who want to organize their wardrobe, get fresh outfit ideas, and make the most of what they already own.",
+    features: ["Wardrobe catalog", "Color and category filters", "AI outfit suggestions", "Save looks", "Photo upload", "Seasonal recommendations"],
+    flowSteps: [
+      ["Upload", "Take a photo or import clothing items."],
+      ["Organize", "Browse by type, color, or season."],
+      ["Recommend", "Get AI-powered outfit combinations."],
+      ["Save", "Collect favorite looks for later."],
+    ],
+    architecture: [
+      ["Wardrobe", "Items grid, filters, add new button"],
+      ["Item Detail", "Photo, type, color, tags"],
+      ["Suggestions", "AI outfits, seasonal picks, weather match"],
+      ["Collections", "Saved looks, named outfits"],
+    ],
+    uiSystem: [
+      ["Wardrobe Grid", "Photo-first cards with item labels"],
+      ["Filters", "Chip-based color and category selection"],
+      ["AI Cards", "Outfit previews with confidence indicators"],
+      ["Actions", "Black primary buttons for upload and save"],
+    ],
+    screens: "Wardrobe grid, item detail and upload, AI suggestions.",
+    designFocus: "Clothing photography, grayscale palette, AI outfit discovery, simple upload flow, and organized collections.",
+    feeling: "Minimal, calm, intentional, smart, personal, and clean.",
+    nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
+    images: [
+      "https://i.ibb.co/0Vy8gy8V/IMG-1005-portrait.png",
+      "https://i.ibb.co/gZy7pj2G/IMG-1006-portrait.png",
+      "https://i.ibb.co/4nQPXmYc/IMG-1007-portrait.png",
     ],
   },
 ];
