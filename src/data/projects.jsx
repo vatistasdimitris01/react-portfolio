@@ -315,11 +315,64 @@ export const projects = [
     screens: "Home feed, content detail, season and episode browser, media player.",
     designFocus: "Dark monochrome palette, content-first layout, clear metadata hierarchy, and simple playback controls.",
     feeling: "Minimal, dark, clean, focused, modern, and immersive.",
-    nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
+    nextText: "Next, view Vest for a clean stock trading and portfolio tracking experience.",
     images: [
       "https://i.ibb.co/xK0PszX9/IMG-1013-portrait.png",
       "https://i.ibb.co/Z6WyvX16/IMG-1015-portrait.png",
       "https://i.ibb.co/73MnCp8/IMG-1016-portrait.png",
+    ],
+  },
+  {
+    title: "Vest",
+    brandName: "Vest",
+    logo: (
+      <svg className="app-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 17L9 11L13 15L21 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M17 7H21V11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+    logoColor: "#22C55E",
+    accent: "#22C55E",
+    tagline: "Track stocks, manage your portfolio, and discover new investments.",
+    palette: ["#111111", "#22C55E", "#EF4444", "#F4F4F4", "#FFFFFF"],
+    description: "A Swift iOS stock trading concept for tracking watchlists, searching stocks, viewing portfolio performance, and managing investments.",
+    mainText: "Vest is a stock trading concept designed for clear portfolio tracking and quick market discovery. The app gives users a watchlist for following stocks, a search screen to find new tickers, detailed stock pages with charts and stats, and a portfolio view that shows balance, holdings, and performance at a glance.",
+    ideaText: "The idea was to create a trading interface that stays clean and readable even when financial data gets detailed. Most trading apps crowd the screen with numbers, labels, and tiny buttons. Vest keeps the layout simple: cards for stock summaries, clear green and red indicators for movement, bottom sheets for detail, and a dashboard that always shows the most important number first.",
+    experienceText: "The user starts on a dashboard with their portfolio balance, key holdings, and quick access to their watchlist. They can search for stocks by name or ticker, view a detailed stock page with chart, stats, and news, add stocks to their watchlist, and check their full portfolio performance over different time periods.",
+    designText: "The design uses a clean financial palette: dark surfaces for the main dashboard, green for gains and positive indicators, red for losses and negative movement, light grey for cards and dividers, and white for text and important data. The colors follow market conventions so the user can read performance immediately.",
+    buildText: "This concept was planned for Swift and SwiftUI using portfolio cards, watchlist rows, search with autocomplete, stock detail sheets, interactive chart components, holding summaries, and time period selectors. The design took around 3\u20134 days.",
+    flowText: "The flow is designed for quick decisions: check your dashboard, browse your watchlist, search for new stocks, and review detailed performance.",
+    problem: "Stock trading apps can feel overwhelming when financial data, charts, watchlists, and portfolio details compete for space on a small screen.",
+    solution: "The solution is a clean card-based layout that separates watchlist, search, portfolio, and stock detail into focused, readable sections.",
+    audience: "Investors who want to track stocks, manage a portfolio, search for new tickers, and monitor performance on mobile.",
+    features: ["Dashboard portfolio", "Stock watchlist", "Ticker search", "Stock detail with chart", "Holdings overview", "Gain and loss indicators"],
+    flowSteps: [
+      ["Dashboard", "View portfolio balance and top holdings."],
+      ["Watchlist", "Follow stocks and track price movement."],
+      ["Search", "Find tickers and view stock details."],
+      ["Detail", "Review charts, stats, and performance."],
+    ],
+    architecture: [
+      ["Dashboard", "Balance, holdings, watchlist summary"],
+      ["Watchlist", "Saved stocks, prices, movement"],
+      ["Search", "Ticker input, results, stock preview"],
+      ["Detail", "Chart, stats, news, add to watchlist"],
+    ],
+    uiSystem: [
+      ["Cards", "Stock summary cards with price and change"],
+      ["Color", "Green for gains, red for losses, dark surfaces"],
+      ["Charts", "Interactive line and candlestick views"],
+      ["Navigation", "Simple tab bar for key sections"],
+    ],
+    screens: "Dashboard portfolio, watchlist, search, stock detail.",
+    designFocus: "Card-based stock summaries, clear gain and loss colors, interactive charts, and fast ticker search.",
+    feeling: "Clean, confident, professional, focused, modern, and readable.",
+    nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
+    images: [
+      "https://i.ibb.co/Jj4mByn7/0-02-05-e8f5d26ea0c9937ff32ec72fa863f6b6157346397129ac4f40dfec9015a4357f-226d0d169e7-portrait.png",
+      "https://i.ibb.co/G3JMN1Kr/IMG-1017-portrait.png",
+      "https://i.ibb.co/MykFqbSg/IMG-1019-portrait.png",
+      "https://i.ibb.co/B5fjys2W/IMG-1020-portrait.png",
     ],
   },
 ];

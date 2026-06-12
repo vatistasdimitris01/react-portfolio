@@ -103,6 +103,8 @@ export default function HomePage({ onOpenProject }) {
                 ? "Home feed, content detail, season browser, and media player."
                 : project.title === "Mono"
                 ? "Wardrobe catalog, item upload, and AI outfit suggestions."
+                : project.title === "Vest"
+                ? "Dashboard portfolio, watchlist, search, and stock detail."
                 : project.images.length === 3
                 ? "Home, restaurant detail, and item customization."
                 : project.title === "Stays"
