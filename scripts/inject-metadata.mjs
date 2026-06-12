@@ -1,7 +1,9 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
-import { join } from "path";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
-const distDir = join(import.meta.dirname, "..", "dist");
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const distDir = join(__dirname, "..", "dist");
 const siteUrl = "https://dvatistas.vercel.app";
 
 const name = "Dimitris Vatistas";
