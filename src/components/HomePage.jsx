@@ -99,7 +99,9 @@ export default function HomePage({ onOpenProject }) {
             </div>
             <div className="caption">
               <strong>{project.title}</strong> —{" "}
-              {project.title === "Mono"
+              {project.title === "STRM"
+                ? "Home feed, content detail, season browser, and media player."
+                : project.title === "Mono"
                 ? "Wardrobe catalog, item upload, and AI outfit suggestions."
                 : project.images.length === 3
                 ? "Home, restaurant detail, and item customization."

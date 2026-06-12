@@ -263,11 +263,66 @@ export const projects = [
     screens: "Wardrobe grid, item detail and upload, AI suggestions.",
     designFocus: "Clothing photography, grayscale palette, AI outfit discovery, simple upload flow, and organized collections.",
     feeling: "Minimal, calm, intentional, smart, personal, and clean.",
+    nextText: "Next, view STRM for a modern movie and TV discovery flow with a dark cinematic look.",
+    images: [
+      "https://i.ibb.co/0Vy8gy8V/IMG-1005-portrait.png",
+      "https://i.ibb.co/gZy7pj2G/IMG-1006-portrait.png",
+      "https://i.ibb.co/4nQPXmYc/IMG-1007-portrait.png",
+    ],
+  },
+  {
+    title: "STRM",
+    brandName: "STRM",
+    logo: (
+      <svg className="app-icon" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2" />
+        <path d="M10 9L16 12L10 15V9Z" fill="currentColor" />
+      </svg>
+    ),
+    logoColor: "#E94560",
+    accent: "#E94560",
+    tagline: "Discover movies and TV shows with a clean streaming experience.",
+    palette: ["#0A0A0A", "#1A1A2E", "#E94560", "#16213E", "#FFFFFF"],
+    description: "A Swift iOS streaming concept for browsing movies, viewing TV show details, exploring seasons and episodes, and playing content.",
+    mainText: "STRM is a streaming concept designed around discovery, browsing, and clean media presentation. The app focuses on helping users find something to watch through curated categories, detailed show pages, season and episode browsing, and a focused media player. Every screen is built to keep the content front and center.",
+    ideaText: "The idea was to build a streaming interface that prioritizes exploration and content clarity over complex menus and algorithmic clutter. The home screen surfaces trending titles and curated collections. The detail pages give users ratings, synopsis, cast information, and direct access to seasons or episodes without unnecessary navigation.",
+    experienceText: "The user starts on a home screen with featured content, categories, and trending titles. They can open a movie or show detail page to view ratings, description, cast, and trailers. For TV shows, a dedicated screen lets them browse seasons and episodes. The player delivers a clean, minimal playback experience with simple controls.",
+    designText: "The design uses a dark cinematic palette: near-black backgrounds, deep navy surfaces, a vibrant red accent for branding and actions, dark blue card layers, and white text for readability. The interface stays intentionally dark to create a theater-like feel that makes cover art and media stand out.",
+    buildText: "This concept was planned for Swift and SwiftUI using a horizontal scrolling hero section, category rows, content cards, detail pages with metadata, season and episode lists, and a custom player overlay. The design took around 4 days.",
+    flowText: "The flow is designed for discovery: browse the home feed, open a title for details, browse seasons and episodes, and play content in a clean viewer.",
+    problem: "Streaming apps can feel overwhelming when the interface competes with the content instead of getting out of the way.",
+    solution: "The solution is a dark, minimal browsing experience that highlights cover art and metadata while keeping navigation simple and direct.",
+    audience: "Users who want to browse movies and TV shows, read descriptions and ratings, and watch content on mobile.",
+    features: ["Trending feed", "Content categories", "Movie and show details", "Season and episode browser", "Ratings and cast", "Media player"],
+    flowSteps: [
+      ["Browse", "Discover trending titles and curated categories."],
+      ["Detail", "View ratings, synopsis, cast, and trailers."],
+      ["Seasons", "Browse TV show seasons and episode lists."],
+      ["Play", "Watch content with a clean player interface."],
+    ],
+    architecture: [
+      ["Home", "Hero, categories, trending rows"],
+      ["Detail", "Rating, description, cast, related titles"],
+      ["Seasons", "Season selector, episode grid"],
+      ["Player", "Video view, controls, info overlay"],
+    ],
+    uiSystem: [
+      ["Content Cards", "Art-first cards with title overlays"],
+      ["Typography", "White text on dark surfaces for readability"],
+      ["Accent", "Red primary color for branding and actions"],
+      ["Navigation", "Clean top tabs and bottom player bar"],
+    ],
+    screens: "Home feed, content detail, season and episode browser, media player.",
+    designFocus: "Dark cinematic palette, content-first layout, clear metadata hierarchy, and simple playback controls.",
+    feeling: "Cinematic, immersive, modern, dark, clean, and focused.",
     nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
     images: [
       "https://i.ibb.co/0Vy8gy8V/IMG-1005-portrait.png",
       "https://i.ibb.co/gZy7pj2G/IMG-1006-portrait.png",
       "https://i.ibb.co/4nQPXmYc/IMG-1007-portrait.png",
+      "https://i.ibb.co/xK0PszX9/IMG-1013-portrait.png",
+      "https://i.ibb.co/Z6WyvX16/IMG-1015-portrait.png",
+      "https://i.ibb.co/73MnCp8/IMG-1016-portrait.png",
     ],
   },
 ];
