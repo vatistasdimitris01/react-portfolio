@@ -49,8 +49,8 @@ export default function HomePage({ onOpenProject }) {
       <div className={`menu-overlay${menuOpen ? " open" : ""}`}>
         <nav className="menu-nav">
           <a href="#work" onClick={closeMenu}>Work</a>
+          <a href="#about" onClick={closeMenu}>About</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
-          <a href="#social" onClick={closeMenu}>Social</a>
         </nav>
       </div>
 
@@ -70,28 +70,16 @@ export default function HomePage({ onOpenProject }) {
         <section>
           <nav className="desktop-nav">
             <a href="#work">Work</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <a href="#social">Social</a>
           </nav>
 
-          <div className="about">
+          <div className="about" id="about">
             <div className="about-title">About</div>
             I’m a full stack web developer who also designs and builds Android
             and Swift iOS apps. I create clean digital products with modern
             interfaces, responsive layouts, simple user flows, and smooth
             interactive details.
-          </div>
-
-          <div className="contact" id="contact">
-            Email:{" "}
-            <a href="mailto:vatistasdimitris.01@gmail.com">vatistasdimitris.01@gmail.com</a>
-            <div className="social-line" id="homeSocialLinks">
-              {socials.map((s) => (
-                <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.label}>
-                  {s.icon}
-                </a>
-              ))}
-            </div>
           </div>
         </section>
       </header>
@@ -122,6 +110,28 @@ export default function HomePage({ onOpenProject }) {
           </section>
         ))}
       </main>
+
+      <section className="contact-section" id="contact">
+        <div className="contact-section-inner">
+          <div className="contact-title">Let’s work together</div>
+          <div className="contact-body">
+            <p>
+              Available for freelance projects, full‑time roles, and
+              collaborations. Reach out and I’ll get back to you.
+            </p>
+            <div className="contact-email">
+              <a href="mailto:vatistasdimitris.01@gmail.com">vatistasdimitris.01@gmail.com</a>
+            </div>
+            <div className="social-line" id="homeSocialLinks">
+              {socials.map((s) => (
+                <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.label}>
+                  {s.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <div className="footer-cta">
