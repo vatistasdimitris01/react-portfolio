@@ -421,10 +421,10 @@ export const projects = [
     feeling: "Calm, clean, trustworthy, modern, spacious, and easy to use.",
     nextText: "Next, go back to Stays for a warmer travel booking flow and cabin discovery.",
     images: [
-      "https://i.ibb.co/mCtwCVmC/IMG-1050.png",
-      "https://i.ibb.co/39JjnmqJ/IMG-1051.png",
-      "https://i.ibb.co/1GgdpgfX/IMG-1052.png",
-      "https://i.ibb.co/zV7ZQpSs/IMG-1053.png",
+      "https://i.ibb.co/6cXBNYKm/IMG-1050-portrait.png",
+      "https://i.ibb.co/wZxVXJ6K/IMG-1051-portrait.png",
+      "https://i.ibb.co/kg2zbC5j/IMG-1052-portrait.png",
+      "https://i.ibb.co/FLSw1GSS/IMG-1053-portrait.png",
     ],
   },
 ];

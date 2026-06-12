@@ -32,7 +32,7 @@ const routes = [
   { slug: "/mono", title: "Mono — Organize your closet and discover outfits with AI.", desc: "A Swift iOS AI styling concept for cataloging clothes, receiving outfit recommendations, and building a personal wardrobe.", img: "https://i.ibb.co/0Vy8gy8V/IMG-1005-portrait.png", app: "Mono" },
   { slug: "/strm", title: "STRM — Discover movies and TV shows with a clean streaming experience.", desc: "A Swift iOS streaming concept for browsing movies, viewing TV show details, exploring seasons and episodes, and playing content.", img: "https://i.ibb.co/xK0PszX9/IMG-1013-portrait.png", app: "STRM" },
   { slug: "/vest", title: "Vest — Track stocks, manage your portfolio, and discover new investments.", desc: "A Swift iOS stock trading concept for tracking watchlists, searching stocks, viewing portfolio performance, and managing investments.", img: "https://i.ibb.co/G3JMN1Kr/IMG-1017-portrait.png", app: "Vest" },
-  { slug: "/skyward", title: "Skyward — Find flights, compare fares, and travel with confidence.", desc: "A Swift iOS flight booking concept for searching destinations, comparing fares, selecting seats, and tracking reservations.", img: "https://i.ibb.co/mCtwCVmC/IMG-1050.png", app: "Skyward" },
+  { slug: "/skyward", title: "Skyward — Find flights, compare fares, and travel with confidence.", desc: "A Swift iOS flight booking concept for searching destinations, comparing fares, selecting seats, and tracking reservations.", img: "https://i.ibb.co/6cXBNYKm/IMG-1050-portrait.png", app: "Skyward" },
 ];
 
 function esc(s) {
