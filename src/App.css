@@ -777,35 +777,10 @@ footer a {
 }
 
 footer {
-  margin-top: 100px;
   padding-top: 44px;
   border-top: 1px solid #e8e8e8;
   color: #555;
   background: #ffffff;
-}
-
-.footer-cta {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 44px;
-  align-items: end;
-  padding-bottom: 44px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.footer-cta h2 {
-  color: #222;
-  font-size: clamp(42px, 7vw, 96px);
-  line-height: 0.92;
-  letter-spacing: -4px;
-  font-weight: 400;
-  max-width: 780px;
-}
-
-.footer-cta p {
-  color: #555;
-  line-height: 1.7;
-  max-width: 440px;
 }
 
 .footer-main {
@@ -897,7 +872,6 @@ footer {
   header,
   .portfolio-grid,
   .contact-section-inner,
-  .footer-cta,
   .footer-main,
   .concept-showcase,
   .showcase-grid,
@@ -959,14 +933,6 @@ footer {
   .project-carousel {
     height: 430px;
     border-radius: 20px;
-  }
-
-  footer {
-    margin-top: 70px;
-  }
-
-  .footer-cta h2 {
-    letter-spacing: -2.5px;
   }
 
   .footer-bottom {
@@ -1045,7 +1011,6 @@ footer {
     padding: 50px 0;
   }
 
-  .footer-cta h2,
   .showcase-heading {
     font-size: 40px;
     letter-spacing: -1.8px;

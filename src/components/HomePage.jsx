@@ -134,15 +134,6 @@ export default function HomePage({ onOpenProject }) {
       </section>
 
       <footer>
-        <div className="footer-cta">
-          <h2>Let’s build something clean.</h2>
-          <p>
-            Available for full stack web development, frontend interfaces, Swift
-            iOS apps, Android apps, UI design, and interactive portfolio-style
-            experiences.
-          </p>
-        </div>
-
         <div className="footer-main">
           <div className="footer-brand">
             <strong>Dimitris Vatistas</strong>
